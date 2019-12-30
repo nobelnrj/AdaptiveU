@@ -1,0 +1,13 @@
+.clearfix{
+    &::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+
+html,body{
+    overflow: auto;
+    overflow: initial;
+    font-family: 'Lato',sans-serif;
+}

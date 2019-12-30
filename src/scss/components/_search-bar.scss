@@ -1,0 +1,14 @@
+.search-bar{
+    border: 1px solid #e9e9e9;
+    border-radius: 32px;
+    padding: 6px 15px;
+    .search-icon{
+        vertical-align: text-bottom;
+        cursor: pointer;
+    }
+    input[type="text"]{
+        border: none;
+        width: 80%;
+        padding: 0 10px;
+    }
+}

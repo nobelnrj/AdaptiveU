@@ -1,0 +1,42 @@
+.sidebar{
+    width: 300px;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    background: #ffffff;
+    box-shadow: 0 3px 2px 1px #f3f3f3;
+    .challenges-scope{
+        margin: 30px 0;
+        position: relative;
+        top: 115px;
+        .search-bar{
+            margin: 0 45px 0 24px;
+        }
+        .categories{
+            margin: 15px 0;
+            li{
+                padding: 0 45px 0 24px;
+                box-sizing: border-box;
+                cursor: pointer;
+                a{
+                    font-family: 'Lato', sans-serif;
+                    font-weight: 500;
+                    line-height: 40px;
+                    text-transform: capitalize;
+                    color: #d6cece;
+                    vertical-align: middle;
+                }
+                &.active{
+                    background-color: #00aae10a;
+                    border-left: solid 4px #0088cc;
+                    a{
+                        color: #5e6d82;
+                    }
+                }
+                &:hover{
+                    background-color: #00aae10a;
+                }
+            }
+        }
+    }
+}

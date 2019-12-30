@@ -1,0 +1,110 @@
+.support-slider{
+    width: 500px;
+    height: 100vh;
+    position: fixed;
+    background: #ffffff;
+    z-index: 5;
+    right: -500px;
+    top: 0;
+    transition: right 0.5s ease;
+    box-shadow: 0 3px 2px 1px #f3f3f3;
+    .feedback-content{
+        position: absolute;
+        width: 300px;
+        left: 50%;
+        text-align: center;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        .feedback-header{
+            font-size: 20px;
+            font-family: 'Lato',sans-serif;
+            font-weight: 700;
+            margin: 50px 0 20px;
+        }
+        .feedback-body{
+            font-size: 15px;
+            font-family: 'Lato',sans-serif;
+            font-weight: 500;
+            margin: 0 0 20px;
+        }
+        .feedback-form{
+            input[type="radio"]{
+                display: none;
+            }
+            .feedback-fields{
+                margin: 0 0 40px;
+                label{
+                    font-size: 15px;
+                    font-family: 'Lato',sans-serif;
+                    font-weight: 500;
+                    padding: 10px;
+                    margin: 0 0 0 15px;
+                    &:last-child{
+                        margin: 0;
+                    }
+                    &:hover{
+                        background-color: #f3f3f3;
+                    }
+                }
+            }
+            .feedback-textbox{
+                width: 250px;
+                margin: 0 auto;
+                .feedback-input{
+                    width: 100%;
+                    border: 1px solid #f3f3f3;
+                    padding: 10px;
+                    font-size: 15px;
+                    font-family: 'Lato',sans-serif;
+                }
+                .feedback-email{
+                    width: 100%;
+                    border: 1px solid #f3f3f3;
+                    padding: 10px;
+                    font-size: 15px;
+                    font-family: 'Lato',sans-serif;
+                }
+                .feedback-attachment{
+                    margin: 20px 0 0;
+                    .feedback-upload{
+                        display: none;
+                    }
+                    .feedback-upload-label{
+                        cursor: pointer;
+                        float: left;
+                    }
+                }
+            }
+            .feedback-btn{
+                margin: 30px 0 0;
+                button{
+                    background-color: #0088cc;
+                    padding: 10px;
+                    color: #ffffff;
+                    font-family: 'Lato',sans-serif;
+                    font-size: 15px;
+                    outline: none;
+                    border: none;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+    .support-btn{
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        border-radius: 5px;
+        font-size: 15px;
+        background-color: #333333;
+        left: -83px;
+        padding: 5px;
+        font-family: 'Lato', sans-serif;
+        color: #ffffff;
+        transform: rotate(-90deg);
+        transform-origin: 50% 52%;
+    }
+    &.active{
+        right: 0;
+    }
+}

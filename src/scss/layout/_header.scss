@@ -1,0 +1,108 @@
+header{
+    background-color: $header-background;
+    padding: 13px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    height: 87px;
+    h1{
+        float: left;
+        color: #ffffff;
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin: 0 20px;
+        span{
+            color:#00a7dc;
+        }
+    }
+    .action-btn{
+        float: right;
+        margin: 0 20px;
+        .notify-dropdown{
+            display: inline-block;
+            position: relative;
+            width: 20px;
+            height: 20px;
+            margin: 0 20px 0 20px;
+            vertical-align: middle;
+            outline: none;
+            .count{
+                position: absolute;
+                top: -5px;
+                left: -5px;
+                background-color: #b94a48;
+                // width: 15px;
+                // height: 15px;
+                border-radius: 50%;
+                font-size: 10px;
+                color: #ffffff;
+                text-align: center;
+                padding: 3px;
+            }
+            svg{
+                g{
+                    fill: #f3f3f3;
+                }
+            }
+            &:hover,&:focus{
+                svg{
+                    g{
+                        fill: #ffffff;
+                    }
+                }
+            }
+        }
+        .account-dropdown{
+            display: inline-block;
+            position: relative;
+            font-family: 'Lato', sans-serif;
+            font-weight: 500;
+            font-size: 15px;
+            margin: 0 20px 0 20px;
+            color: #f3f3f3;
+            outline: none;
+            .down-arrow{
+                bottom: 3px;
+            }
+            svg{
+                g{
+                    fill: #f3f3f3;
+                }
+            }
+            &:hover,&:focus{
+                color: #ffffff;
+                svg{
+                    g{
+                        fill: #ffffff;
+                    }
+                }
+            }
+            .dropdown{
+                position: absolute;
+                top: 25px;
+                width: 100px;
+                background-color: #ffffff;
+                z-index: 100;
+                color: #000000;
+                right: -20px;
+                line-height: 20px;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 2px 4px 0 rgba(170,170,170,0.50);
+                li{
+                    border-bottom: solid 1px #f3f3f3;
+                    padding: 10px;
+                    &:hover{
+                        background-color: #f3f3f3;
+                    }
+                    &:last-child{
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}

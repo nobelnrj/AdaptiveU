@@ -1,0 +1,21 @@
+.container{
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.main-container{
+    background-color: #f3f3f3;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 180px 50px 50px 350px;
+}
+.row{
+    font-size: 30px;
+    width: calc(100% - 400px);
+    background-color: #ffffff;
+    min-height: 1000px;
+    display: none;
+    &.show{
+        display: block;
+    }
+}

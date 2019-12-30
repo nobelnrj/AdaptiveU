@@ -1,0 +1,83 @@
+.ct-chart{
+    position: relative;
+    &.yellow{
+        .ct-series-a {
+            .ct-line {
+                stroke: #fad379 !important;
+                stroke-width: 2px;
+            }
+            .ct-point {
+                stroke: #fad379 !important;
+                stroke-width: 15px;
+                stroke-linecap: round;
+                cursor: pointer;
+            }
+        }
+    }
+    &.blue{
+        .ct-series-a {
+            .ct-line {
+                stroke: #63a5ef !important;
+                stroke-width: 2px;
+            }
+            .ct-point {
+                stroke: #63a5ef !important;
+                stroke-width: 15px;
+                stroke-linecap: round;
+                cursor: pointer;
+            }
+        }
+    }
+    &.green{
+        .ct-series-a {
+            .ct-line {
+                stroke: #2adb8a !important;
+                stroke-width: 2px;
+            }
+            .ct-point {
+                stroke: #2adb8a !important;
+                stroke-width: 15px;
+                stroke-linecap: round;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+div#tooltip{
+    display: none;
+    background-color: #3d4a5c;
+    color: #ffffff;
+    padding: 15px;
+    font-size: 15px;
+    min-width: 60px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    position: absolute !important;
+    transform: translate(-50%,-140%);
+    z-index: 1;
+    text-align: center;
+    .triangle-down{
+        width: 0;
+        height: 0;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-top: 10px solid #3d4a5c;
+        position: absolute;
+        left: 50%;
+        bottom: -9px;
+        transform: translateX(-50%);
+    }
+}
+
+// .ct-point:hover + div#tooltip{
+//     position: absolute;
+//     bottom: 10px;
+//     background-color: #3d4a5c;
+//     color: #ffffff;
+//     padding: 15px;
+// }
+
+.ct-perfect-fourth{
+    height: 350px;
+}

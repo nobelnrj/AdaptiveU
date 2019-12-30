@@ -1,0 +1,118 @@
+.table-view{
+    .table-header{
+        max-height: 50px;
+        h6{
+            font-size: 15px;
+            color: #5e6d82;   
+            float: left;
+            padding: 10px 0;
+            font-family: 'Lato', sans-serif;
+            font-weight: 500;
+        }
+        .table-action{
+            float: right;
+            .search-bar{
+                float: left;
+                font-family: 'Lato',sans-serif;
+                font-size: 14px;
+                margin: 0 25px 0 0;
+            }
+            .cloud-sort{
+                cursor: pointer;
+                float: left;
+                margin: 0 20px 0 0;
+                position: relative;
+            }
+        }
+    }
+    .watch-list{
+        .col-5{
+            width: calc(100% / 5);
+            float: left;
+        }
+        .watch-list-header{
+            max-height: 20px;
+            padding: 20px 0;
+            border-bottom: 1px solid #f4f4f4;
+            div{
+                span{
+                    font-size: 15px;
+                    color: #5e6d8283;
+                    font-family: 'Lato', sans-serif;
+                    font-weight: 500;
+                    cursor: pointer;
+                }
+                svg{
+                    margin: 0 0 0 10px;
+                    cursor: pointer;
+                }
+            }
+            div:not(:first-child){
+                text-align: center;
+            }
+        }
+        .user-list{
+            .user{
+                padding: 15px 0;
+                border-bottom: 1px solid #f4f4f4a4;
+                div{
+                    line-height: 30px;
+                    font-size: 14px;
+                    font-family: 'Lato', sans-serif;
+                    color: #5e6d82;
+                    a{
+                        color: #00c16c;
+                        padding: 10px 20px;
+                        border: 1px solid #00c16c;
+                        border-radius: 20px;
+                        transition: background-color 0.5s ease;
+                        &:hover{
+                            background-color: #00c16c;
+                            color: #ffffff;
+                        }
+                    }
+                }
+                div:not(:first-child){
+                    text-align: center;
+                }
+                div:first-child{
+                    img{
+                        width: 30px;
+                        height: 30px;
+                        margin: 0 10px 0 0;  
+                    }
+                    color: #0088cc;
+                    text-transform: capitalize;
+                }
+            }
+        }
+        .user-list-filter{
+            margin: 10px 0 0;
+            float: right;
+            div{
+                display: inline-block;
+                font-family: 'Lato',sans-serif;
+                font-size: 15px;
+                color: #5e6d82;
+                font-weight: 500;
+                letter-spacing: 1px;
+                span{
+                    margin: 0 10px 0 0;
+                    &:last-child{
+                        margin: 0;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .list-per-page{
+                position: relative;
+                margin: 0 36px 0 0;
+            }
+            .page-slider{
+                svg{
+                    margin: 0 10px 0 0;
+                }
+            }
+        }
+    }
+}
